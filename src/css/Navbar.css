@@ -1,0 +1,23 @@
+.nav-container {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(117, 201, 250);
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0;
+    padding: 0 20rem;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    user-select: none;
+}

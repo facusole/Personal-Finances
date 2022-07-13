@@ -24,7 +24,7 @@ function IncomesTable() {
               {data.map( (dataItem) =>  (         
                <tr key={Math.random()*10000}>
                 <td>{dataItem.reason}</td>
-                <td>${dataItem.amount}</td>
+                <td>-${dataItem.amount}</td>
                 <td>{dataItem.date}</td>
               </tr> 
               

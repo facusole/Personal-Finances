@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const AltaIngresos = ({addData}) => {
+const Incomes = ({addData}) => {
 
     const [element, setElement] = useState({
         reason:'',
@@ -17,7 +17,7 @@ const AltaIngresos = ({addData}) => {
         }
         setElement(aux)
     }
-
+    
     const handleSubmit = (props) => {
 
         props.preventDefault()
@@ -33,9 +33,9 @@ const AltaIngresos = ({addData}) => {
     return (
         <div className="form">
             <form onSubmit={handleSubmit}>
-                <input type="text" name="reason" value={element.reason} placeholder='Reason' onChange={handleElement} required/>
-                <input type="number" name="amount" value={element.amount} placeholder='Amount' onChange={handleElement} required/>
-                <input type="date" name="date" value={element.date.split('-').reverse().join('-')} onChange={handleElement} required/>
+                <input type="text" name="reason" value={element.reason} placeholder='Reason' onChange={handleElement} autoComplete='off' required/>
+                <input type="number" name="amount" value={element.amount} placeholder='Amount' onChange={handleElement} autoComplete='off' required/>
+                <input type="date" name="date" value={element.date.split('-').reverse().join('-')} onChange={handleElement} autoComplete='off' required/>
                 <button type="submit">Submit</button>
             </form>
 
@@ -44,4 +44,4 @@ const AltaIngresos = ({addData}) => {
     )
 }
 
-export default AltaIngresos;
+export default Incomes;

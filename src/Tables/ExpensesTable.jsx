@@ -4,7 +4,9 @@ import Expenses from '../Components/Expenses';
 import ReadOnlyRow from '../Components/ReadOnlyRow';
 import EditableRow from '../Components/EditableRow';
 
-function IncomesTable() {
+// Funciona exactamente igual que la IncomesTable
+
+function ExpensesTable() {
 
   const [data, setData] = useState([])
 
@@ -118,4 +120,4 @@ function IncomesTable() {
   );
 }
 
-export default IncomesTable;
+export default ExpensesTable;

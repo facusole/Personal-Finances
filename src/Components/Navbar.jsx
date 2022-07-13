@@ -1,6 +1,8 @@
 import '../css/Navbar.css'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 
+// Una simple navbar con react-router-dom para poder linkear las paginas.
+
 function Navbar() {
     return (
         <div className="nav-container">
@@ -11,6 +13,8 @@ function Navbar() {
         </div>
     )
 }
+
+// Custom Link es una funcion que le pasamos 3 parametros, to es usado para usar el hook de useResolvedPath y conseguir la ruta exacta del archivo, children es para poder crear el li a todos los children de la funcion y ...props por si tenemos otros parametros. Luego, el className tiene un ternario para preguntar si la ruta absoluta es estrictamente igual, si es asi, la clase pasa a ser active y si no lo es, queda sin clase.
 
 function CustomLink ({ to, children, ...props}) {
     const resolvedPath = useResolvedPath(to)

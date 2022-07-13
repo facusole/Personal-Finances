@@ -1,5 +1,7 @@
 import {useState} from 'react';
 
+// Funciona exactamente igual que Incomes
+
 const Expenses = ({addData}) => {
 
     const [element, setElement] = useState({

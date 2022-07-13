@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Genera fila editable, en la que muestra los valores que se llenaron antes en el value y guarda los nuevos valores con el onChange, el onSubmit se maneja desde el form que engloba toda la table en el IncomesTable para guardar los datos modificados.
+
 function EditableRow({ editFormData, handleEditFormData }) {
     return (
         <tr>

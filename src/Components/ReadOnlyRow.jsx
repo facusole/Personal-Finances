@@ -1,7 +1,11 @@
 import React from 'react'
 
+// Genera fila de solo lectura, con un id random, recibe 3 parametros, un dataItem que es el dato que se llena del input, y 2 funciones para manejar los botones.
 
 function ReadOnlyRow({ dataItem, handleEditClick, handleDeleteClick}){
+
+    // Cada td es un elemento dentro de la fila tr. 
+
     return (
         <tr key={Math.random() * 10000}>
             <td>{dataItem.reason}</td>

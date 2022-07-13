@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const Incomes = ({addData}) => {
+const Expenses = ({addData}) => {
 
     const [element, setElement] = useState({
         reason:'',
@@ -33,7 +33,7 @@ const Incomes = ({addData}) => {
     return (
         <div className="form">
             <form onSubmit={handleSubmit}>
-                <input type="text" name="reason" value={element.reason} placeholder='Income reason' onChange={handleElement} autoComplete='off' required/>
+                <input type="text" name="reason" value={element.reason} placeholder='Expense reason' onChange={handleElement} autoComplete='off' required/>
                 <input type="number" name="amount" value={element.amount} placeholder='Amount' onChange={handleElement} autoComplete='off' required/>
                 <input type="date" name="date" value={element.date.split('-').reverse().join('-')} onChange={handleElement} autoComplete='off' required/>
                 <button type="submit">Submit</button>
@@ -44,4 +44,4 @@ const Incomes = ({addData}) => {
     )
 }
 
-export default Incomes;
+export default Expenses;

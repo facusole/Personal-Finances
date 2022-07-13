@@ -1,9 +1,14 @@
 import IncomesTable from "./Tables/IncomesTable";
+import ExpensesTable from "./Tables/ExpensesTable";
 
 function App() {
 
   return (
-    <IncomesTable/>
+    <div className="container">
+        <IncomesTable />
+        <ExpensesTable />
+    </div>
+
   );
 }
 

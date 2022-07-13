@@ -24,6 +24,7 @@ const Incomes = ({addData}) => {
 
         addData(element)
         setElement({
+            id: Math.random()*10000,
             reason:'',
             amount:'',
             date:''
